@@ -213,7 +213,7 @@ dsh_group "nova" do
   group "nova"
 end
 
-%w{vm_create.sh tenant_create.sh}.each do |script|
+%w{vm_create.sh tenant_create.sh setup_poc.sh clear_demo.sh}.each do |script|
   cookbook_file "/root/#{script}" do
     mode "0755"
     source script
